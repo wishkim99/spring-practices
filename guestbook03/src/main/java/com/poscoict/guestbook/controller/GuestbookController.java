@@ -1,4 +1,4 @@
-package com.douzone.guestbook.controller;
+package com.poscoict.guestbook.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.douzone.guestbook.repository.GuestbookRepository;
-import com.douzone.guestbook.vo.GuestbookVo;
+import com.poscoict.guestbook.repository.GuestbookRepository;
+import com.poscoict.guestbook.vo.GuestbookVo;
 
 @Controller
 public class GuestbookController {

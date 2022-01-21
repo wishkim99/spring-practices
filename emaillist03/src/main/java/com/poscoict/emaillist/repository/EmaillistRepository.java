@@ -8,8 +8,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.poscoict.emaillist.vo.EmaillistVo;
 
+@Repository
 public class EmaillistRepository {
 	public List<EmaillistVo> findAll() {
 		List<EmaillistVo> result = new ArrayList<>();

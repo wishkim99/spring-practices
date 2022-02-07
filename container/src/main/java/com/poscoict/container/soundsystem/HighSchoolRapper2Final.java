@@ -9,7 +9,7 @@ public class HighSchoolRapper2Final implements CompactDisc {
 	
 	@Override
 	public void play() {
-		System.out.println("Playing"+title+ "by"+artist);
+		System.out.println("Playing "+title+" by "+artist);
 	}
 	
 	

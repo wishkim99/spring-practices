@@ -20,7 +20,7 @@ public class XmlConfigTest {
 	}
 
 	private static void testApplicationContext01() {
-		ApplicationContext ac = new ClassPathXmlApplicationContext(
+		ApplicationContext ac = new ClassPathXmlApplicationContext( //xml로 컨테이너 bean 설정을 하겠다는 의미
 				"com/poscoict/container/config/user/applicationContext01.xml"); // ""안에는 설정파일
 		User1 user1 = ac.getBean(User1.class); // User1 타입으로 리턴
 		System.out.println(user1.getName());
@@ -66,6 +66,14 @@ public class XmlConfigTest {
 
 		// setter를 사용한 빈 가져오기
 		user = (User) ac.getBean("user5");
+		System.out.println(user);
+
+		// setter를 사용한 빈 가져오기2(DI)
+		user = (User) ac.getBean("user6");
+		System.out.println(user);
+
+		// setter를 사용한 빈 가져오기3(List Property)
+		user = (User) ac.getBean("user7");
 		System.out.println(user);
 	}
 

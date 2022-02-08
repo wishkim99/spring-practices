@@ -1,6 +1,5 @@
-package com.poscoict.container.config.videosystem;
+package com.poscoict.container.videosystem;
 
-import com.poscoict.container.videosystem.DigitalVideoDisc;
 
 public class Avengers implements DigitalVideoDisc {
 
@@ -9,7 +8,7 @@ public class Avengers implements DigitalVideoDisc {
 	
 	@Override
 	public void play() {
-		System.out.println("Playing Movie "+studio+ "'s"+ title);
+		System.out.println("Playing Movie "+studio+ "'s "+ title);
 	}
 
 }
